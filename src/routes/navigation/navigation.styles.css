@@ -1,0 +1,17 @@
+.logo img {
+    height: 60px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-height: 8vh;
+    margin-top: 8px;
+}
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}

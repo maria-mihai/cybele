@@ -1,0 +1,32 @@
+.category-title {
+    font-size: 27px;
+}
+.text-container {
+    width: 27vw;
+    height: 27vw;
+    border-radius: 50%;
+    background-color: #7c917a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.text-container:hover {
+    background: linear-gradient(90deg, #7c917a, #5d8c1c, #f7d549);
+    background-size: 600% 600%;
+
+    animation: category-radient 7s ease infinite;
+}
+@keyframes category-radient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+.category-img {
+    display: block;
+    max-width: 12vw;
+}
+.text-container p {
+    margin-top: -10px;
+}

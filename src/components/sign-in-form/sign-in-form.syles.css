@@ -1,0 +1,18 @@
+.line {
+    width: 140px;
+    height: 1px;
+    background-color: black;
+}
+.or-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    max-width: 300px;
+}
+.or {
+    font-size: 24px;
+}
+.google-button {
+    background-color: cornflowerblue;
+}
