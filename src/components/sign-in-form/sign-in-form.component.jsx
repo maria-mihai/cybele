@@ -1,6 +1,6 @@
 import React from "react";
 import FormInput from "../form-input/form-input.component";
-import { signInWithGooglePopup, createUserDocumentFromAuth, signInUserAuthWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
+import { signInWithGooglePopup, signInUserAuthWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
 import { useState } from "react";
 import './sign-in-form.syles.css';
 const defaultField = {
@@ -12,8 +12,7 @@ const SignInForm = () => {
     const [alertText, setAlertText] = useState('');
     const {email, password} = formFields;
     const googlePopup = async () => {
-        const {user} = await signInWithGooglePopup();
-        //const userDocRef = await createUserDocumentFromAuth(user);
+        await signInWithGooglePopup();
     }
 
     const handleChange = (event) => {
@@ -26,8 +25,7 @@ const SignInForm = () => {
         event.preventDefault();
 
         try {
-            const {user} = await signInUserAuthWithEmailAndPassword(email, password);
-            console.log(user);
+            await signInUserAuthWithEmailAndPassword(email, password);
             setAlertText('Signed In!');
         }
         catch(error) {
