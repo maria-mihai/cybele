@@ -1,0 +1,45 @@
+.productImage {
+    display: block;
+    max-width: 30vw;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    row-gap: 2vw;
+}
+.namePricePair {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.productName{
+    font-size: 18px;
+    text-transform:uppercase;
+}
+.product-container img:hover {
+    opacity: 60%;
+}
+.productButton {
+    display: none;
+    position: absolute;
+    top: 70%;
+    bottom: auto;
+    left: 2.5vw;
+    right: 2.5vw;
+    width: 25vw;
+}
+.productImage:hover + .productButton {
+    display: block;
+}
+.product-container {
+    position: relative;
+}
+.productButton:hover {
+    display: block;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

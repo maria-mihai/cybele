@@ -3,8 +3,16 @@ import { Link, Outlet } from "react-router-dom";
 import "./navigation.styles.css";
 import { UserContext } from "../../contexts/user.context";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
+import CartIcon from "../../components/cart-icon/cart-icon.component";
+import DropDown from "../../components/dropdown/dropdown.component";
+import { DropDownContext } from "../../contexts/dropdown.context";
 const Navigation = ()=> {
     const {currentUser} = useContext(UserContext);
+    const {selected, setSelected} = useContext(DropDownContext);
+    const cartIconClicked = () => {
+        const newValue = !selected;
+        setSelected(newValue);
+    }
     return (
         <Fragment>
         <div className="navigation">
@@ -14,8 +22,9 @@ const Navigation = ()=> {
             <div className="nav-links-container">
                 <Link to="/shop">SHOP</Link>
                 { currentUser === null? <Link to="/authentication">SIGN IN</Link> : <span onClick={signOutUser}>SIGN OUT</span> }
-                
             </div>
+            <div onClick={cartIconClicked}><CartIcon /></div>
+            {selected? <DropDown /> : null}
         </div>
         <Outlet></Outlet>
         </Fragment>

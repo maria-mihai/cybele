@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Echeveria lilacina",
+      "imageUrl": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1630666435/tfy38vfbq9kmnweyikrc.jpg",
+      "price": 25
+    },
+    {
+      "id": 2,
+      "name": "Euphorbia",
+      "imageUrl": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1604603804/qxylc4dbhbpqafb8hv60.jpg",
+      "price": 18
+    },
+    {
+      "id": 3,
+      "name": "Cactus",
+      "imageUrl": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1519929823/products/cactus-49debf.jpg",
+      "price": 35
+    },
+    {
+      "id": 4,
+      "name": "Bird’s nest fern",
+      "imageUrl": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1644942282/jnmk07jlaa96kspkhas6.jpg",
+      "price": 25
+    },
+    {
+      "id": 5,
+      "name": "Boston fern",
+      "imageUrl": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1595004495/zmjq2brobunuatc5yw6h.jpg",
+      "price": 18
+    },
+    {
+      "id": 6,
+      "name": "Monstera Deliciosa",
+      "imageUrl": "https://www.ikea.com/ro/ro/images/products/monstera-deliciosa-planta-naturala__0902106_pe640705_s5.jpg?f=xs",
+      "price": 27
+    }
+  ]
+  
