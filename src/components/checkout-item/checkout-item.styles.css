@@ -1,0 +1,19 @@
+.checkout-item-image {
+    height: 150px;
+}
+.checkout-item-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    min-width: 60vw;
+}
+.checkout-amount {
+    font-size: 20px;
+}
+.greater-than, .less-than, .x {
+    cursor: pointer;
+}
+.checkout {
+    text-align: center;
+}

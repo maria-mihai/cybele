@@ -5,10 +5,10 @@ import { UserContext } from "../../contexts/user.context";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import DropDown from "../../components/dropdown/dropdown.component";
-import { DropDownContext } from "../../contexts/dropdown.context";
+import { CartContext } from "../../contexts/cart.context";
 const Navigation = ()=> {
     const {currentUser} = useContext(UserContext);
-    const {selected, setSelected} = useContext(DropDownContext);
+    const {selected, setSelected} = useContext(CartContext);
     const cartIconClicked = () => {
         const newValue = !selected;
         setSelected(newValue);

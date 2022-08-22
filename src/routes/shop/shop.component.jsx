@@ -7,8 +7,8 @@ const Shop = () => {
   const {products} = useContext(ProductsContext);
   return (<div className="products-container">
   {
-    products.map( ({id,name, price, imageUrl}) => {
-      return (<ProductCard id={id} name={name} price={price} imgSource={imageUrl} /> )
+    products.map( (product) => {
+      return (<ProductCard product={product} /> )
     })
   }
   </div>)
