@@ -16,6 +16,13 @@ const Checkout = () => {
             <h1>CHECKOUT</h1>
             { total > 0? 
             <div className="checkout-items">
+                <div className="checkout-items-header">
+                    <div></div>
+                    <p>Description</p>
+                    <p>Price</p>
+                    <p>Amount</p>
+                    <p>Remove</p>
+                </div>
                 <div className="checkout-items-container">
                     {sortedItems.map((item) => <CheckoutItem item={item} />)}
                 </div> 
