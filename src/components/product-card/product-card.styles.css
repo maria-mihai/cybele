@@ -1,6 +1,6 @@
 .productImage {
     display: block;
-    max-width: 30vw;
+    max-width: 24vw;
 }
 .products-container {
     display: flex;
@@ -27,9 +27,9 @@
     position: absolute;
     top: 70%;
     bottom: auto;
-    left: 2.5vw;
-    right: 2.5vw;
-    width: 25vw;
+    left: 3vw;
+    right: 3vw;
+    width: 18vw;
 }
 .productImage:hover + .productButton {
     display: block;

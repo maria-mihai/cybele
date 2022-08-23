@@ -17,7 +17,7 @@ const Navigation = ()=> {
         <Fragment>
         <div className="navigation">
             <Link className="logo" to="/">
-                <img src="https://i.imgur.com/wLlNbyV.png" alt="flower"></img>
+                <img src="https://i.imgur.com/phYsUKB.png" alt="flower"></img>
             </Link>
             <div className="nav-links-container">
                 <Link to="/shop">SHOP</Link>
