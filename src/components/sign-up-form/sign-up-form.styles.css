@@ -15,9 +15,10 @@ button {
     width: 25vw;
     border-style: none;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 button:hover{
-    background-color:darkgrey;
+    background-color:grey;
 }
 input {
     max-width: 25vw;

@@ -1,0 +1,31 @@
+.carousel {
+    display: flex;
+    max-width: 70vw;
+    overflow: scroll;
+    flex-direction: row;
+    scroll-behavior: smooth;
+}
+.carousel-item {
+    margin: 12px;
+}
+.scroll-dot {
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.active-dot {
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}

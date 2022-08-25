@@ -1,44 +1,33 @@
 .main-page {
-    position: fixed;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    height: 550px;
+    width: 100%;
 
-    background: linear-gradient(318deg, #56d4b3, #56b2d4, #4b7bdd, #5855e3, #9755e3);
-    background-size: 1000% 1000%;
+    background-image: url('https://images.pexels.com/photos/797797/pexels-photo-797797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-    -webkit-animation: gradient-anim 30s ease infinite;
-    -moz-animation: gradient-anim 30s ease infinite;
-    animation: gradient-anim 30s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .main-page h1 {
-    position: absolute;
+    /*position: absolute;
     bottom: 20vh;
     left: 15vw;
     right: auto;
-    top: auto;
+    top: auto;*/
     font-size: 48px;
     color: white;
+    font-family: 'Playfair Display SC', serif;
 }
-#span-collection {
-    font-size: 60px;
-    font-weight: 500;
+.main-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-@-webkit-keyframes gradient-anim {
-    0%{background-position:0% 87%}
-    50%{background-position:100% 14%}
-    100%{background-position:0% 87%}
-}
-@-moz-keyframes gradient-anim {
-    0%{background-position:0% 87%}
-    50%{background-position:100% 14%}
-    100%{background-position:0% 87%}
-}
-@keyframes gradient-anim {
-    0%{background-position:0% 87%}
-    50%{background-position:100% 14%}
-    100%{background-position:0% 87%}
+.main-page button {
+    max-width: 200px;
 }

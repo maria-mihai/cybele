@@ -3,19 +3,18 @@ import './product-card.styles.css';
 import { useContext } from "react";
 import { CartContext } from "../../contexts/cart.context";
 
-const ProductCard = ( {product}) => {
-    const {id, name, price, imageUrl} = product;
+const ProductCard = ( props) => {
+    const {id, name, price, images} = props.product;
     const {addItemToCart} = useContext(CartContext);
     const addCartItem = () => {
-        console.log('adding item!');
-        addItemToCart(product);
+        addItemToCart(props.product);
     }
     return <div className="product-container" key={id}>
-        <img src={imageUrl} className="productImage" />
+        <img src={images[0]} className="productImage" />
         <button className="productButton" onClick={addCartItem}>ADD TO CART</button>
         <div className="namePricePair">
-            <span className="productName">{name}</span>
-            <span className="productPrice">{price}</span>
+            <span onClick={props.onProductClicked} className="productName">{name}</span>
+            <span className="productPrice">€{price-0.01}</span>
         </div>
     </div>
 }

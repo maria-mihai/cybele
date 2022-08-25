@@ -1,16 +1,16 @@
 .category-title {
-    font-size: 27px;
+    font-size: 24px;
 }
 .text-container {
     width: 27vw;
-    height: 27vw;
-    border-radius: 50%;
+    height: 120px;
     background-color: #7c917a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-top: 0;
+    padding-left: 30px;
     color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 3px;
 }
 .text-container:hover {
     background: linear-gradient(90deg, #7c917a, #5d8c1c, #f7d549);
@@ -25,8 +25,14 @@
 }
 .category-img {
     display: block;
-    max-width: 12vw;
+    max-width: 27vw;
+    padding: 0;
+    margin: 0;
 }
 .text-container p {
     margin-top: -10px;
+}
+.category-container {
+    display: grid;
+    grid-template-rows: 6fr 4fr;
 }

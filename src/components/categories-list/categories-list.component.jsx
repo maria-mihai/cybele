@@ -1,14 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import './categories-list.styles.css';
 import Category from "../category/category.component";
+import { CategoriesContext } from "../../contexts/categories.context";
 const CategoriesList = ({categories}) => {
+  const {categoriesMap} = useContext(CategoriesContext);
     return (
     <div className="categories-container">
-      {categories.map( (category) => (
-        <Category key={category.id} category={category}></Category>
-      )
-      )
-      }
+      {
+          Object.keys(categoriesMap).map(name => {
+            return (<Category category={categoriesMap[name]} />)
+          })
+        }
   </div>)
 }
 

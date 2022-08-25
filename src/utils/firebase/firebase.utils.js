@@ -1,6 +1,6 @@
 import {initializeApp} from 'firebase/app';
 import {getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged} from 'firebase/auth';
-import {getFirestore, doc, getDoc, setDoc} from 'firebase/firestore';
+import {getFirestore, doc, getDoc, setDoc, query, getDocs, collection} from 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDsYZZz-x9q9pWk7ZEQuza3Mz7b0TWqnU4",
@@ -26,7 +26,6 @@ const firebaseConfig = {
   export const db = getFirestore();
   export const createUserDocumentFromAuth = async (userAuth, additionalInformation = {}) => {
     const userDocRef = doc(db, 'users', userAuth.uid);
-    console.log(userDocRef);
     const userSnapshot = await getDoc(userDocRef);
     
     if (!userSnapshot.exists()) {
@@ -66,4 +65,17 @@ const firebaseConfig = {
 
   export const onAuthStateChangedListener = (callback) => {
     onAuthStateChanged(auth, callback);
+  }
+
+  export const getCategoriesAndDocuments =  async () => {
+    const collectionRef = collection(db, 'categories');
+
+    const q = query(collectionRef);
+    const querySnapshot = await getDocs(q);
+    const categoryMap = querySnapshot.docs.reduce( (accum, docSnapshot) => {
+    
+      const data = docSnapshot.data();
+      return {...accum, data};
+    }, {});
+    return categoryMap["data"];
   }

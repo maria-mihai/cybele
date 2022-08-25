@@ -1,0 +1,31 @@
+.product-page {
+    position: fixed;
+    top:12vh;
+    bottom: 12vh;
+    left: 5vw;
+    right: 5vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pr-p-lt, .pr-p-gt, .x-button {
+    font-size: 36px;
+    cursor: pointer;
+}
+.product-page-image h1 {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.x-button {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+.product-page-text {
+    max-width: 25vw;
+}
