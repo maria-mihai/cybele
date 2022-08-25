@@ -3,7 +3,6 @@ import { CartContext } from "../../contexts/cart.context";
 import './product-page.styles.css';
 const ProductPage = (props) => {
     const product = props.product;
-    console.log(props);
     const {name, botanicalName, description, price, images} = product;
     const [crntImage, setCrntImage] = useState(0);
     const nextImage = () => {

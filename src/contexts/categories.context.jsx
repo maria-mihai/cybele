@@ -26,7 +26,6 @@ export const CategoriesProvider = ({children}) => {
         Object.keys(categoriesMap).forEach( (category) => {
             categoriesMap[category]["items"].map( (item) => allProductsArray.push(item));
         });
-        console.log(allProductsArray);
         setAllProducts(allProductsArray);
     }, [categoriesMap]);
     return <CategoriesContext.Provider value={value}>

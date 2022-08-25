@@ -15,7 +15,6 @@ const CategoryPage = () => {
         toggleProductPage(false);
     }
     useEffect( () => {
-        console.log(categoriesMap[category]);
         setProducts(categoriesMap[category]);
     }, [category, categoriesMap]);
     return (<div key={category.id} className="category-page">

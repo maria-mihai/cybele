@@ -22,7 +22,6 @@ const ProductsCarousel = ({productsToDisplay}) => {
         {
         productsToDisplay.map( (product) => {
             i++;
-            console.log(i);
             return (<a id={""+i} href={'#'+product.id} className={clickedDot === ""+i ? "active-dot" : "scroll-dot"} onClick={dotClicked}>.</a>)
         })}
         </div>
