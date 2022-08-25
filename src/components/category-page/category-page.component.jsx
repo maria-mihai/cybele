@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext} from "react";
 import ProductCard from "../product-card/product-card.component";
 import './category-page.styles.css';
-import { useParams, Route, Routes } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import { CategoriesContext } from "../../contexts/categories.context";
 import ProductPage from "../../routes/product-page/product-page.component";
 

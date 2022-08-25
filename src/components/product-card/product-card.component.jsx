@@ -10,7 +10,7 @@ const ProductCard = ( props) => {
         addItemToCart(props.product);
     }
     return <div className="product-container" key={id}>
-        <img src={images[0]} className="productImage" />
+        <img src={images[0]} className="productImage" alt="potted plant"/>
         <button className="productButton" onClick={addCartItem}>ADD TO CART</button>
         <div className="namePricePair">
             <span onClick={props.onProductClicked} className="productName">{name}</span>

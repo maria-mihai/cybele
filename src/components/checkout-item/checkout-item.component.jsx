@@ -25,7 +25,7 @@ const CheckoutItem = ({item}) => {
         setCartItems(updatedItems);
     }
     return (<div className="checkout-item-container" key={id}>
-        <img src={images} className="checkout-item-image"/>
+        <img src={images} className="checkout-item-image" alt="close up of product"/>
         <h2>{name}</h2>
         <p>{price} EUR</p>
         <p className="checkout-amount"> <span className="greater-than" onClick={decrease}>&lt;</span> {amount} <span className="less-than" onClick={increase}>&gt;</span></p>

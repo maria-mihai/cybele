@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import ProductsCarousel from "../../components/products-carousel/products-carousel.component";
 import './main-page.styles.css';

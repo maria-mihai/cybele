@@ -23,7 +23,7 @@ export const CategoriesProvider = ({children}) => {
 
     useEffect( () => {
         let allProductsArray = [];
-        Object.keys(categoriesMap).map( (category) => {
+        Object.keys(categoriesMap).forEach( (category) => {
             categoriesMap[category]["items"].map( (item) => allProductsArray.push(item));
         });
         console.log(allProductsArray);

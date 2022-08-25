@@ -9,7 +9,7 @@ const Category = ({category}) => {
     }
     return (
     <div className='category-container' onClick={navigateHandler}>
-            <img src={imgPath} className="category-img"/>
+            <img src={imgPath} className="category-img" alt="close-up of plant"/>
             <div className="text-container">
             <h2 className="category-title">{name}</h2>
             <p>Shop Now!</p>

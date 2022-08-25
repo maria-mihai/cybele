@@ -1,5 +1,4 @@
 import React from "react";
-import ProductCard from "../../components/product-card/product-card.component";
 import './shop.styles.css';
 import CategoryPage from "../../components/category-page/category-page.component";
 import { Route, Routes } from "react-router-dom";

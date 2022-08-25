@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext} from "react";
 import { CartContext } from "../../contexts/cart.context";
 import './product-page.styles.css';
 const ProductPage = (props) => {
@@ -19,7 +19,7 @@ const ProductPage = (props) => {
     return (
         <div className="product-page">
             <div className="product-page-image">
-                <img src={images[crntImage]} />
+                <img src={images[crntImage]} alt="close up of product"/>
                 <h1><span className="pr-p-lt" onClick={prevImage}>&lt;</span> <span className="pr-p-gt" onClick={nextImage}>&gt;</span></h1>
             </div>
             <div className="product-page-text">

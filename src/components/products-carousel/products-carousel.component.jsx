@@ -12,8 +12,6 @@ const ProductsCarousel = ({productsToDisplay}) => {
     const dotClicked = (event) => {
         setClickedDot(event.target.id);
     }
-    let dots = [];
-    
     return <div className="carousel-container"><div className="carousel">
         {productsToDisplay.map( (product) => {
             return <div className="carousel-item" ><div id={product["id"]}></div><ProductCard product={product} onProductClicked={null} /></div>
