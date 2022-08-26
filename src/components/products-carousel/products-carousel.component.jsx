@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import ProductCard from "../product-card/product-card.component";
 import './products-carousel.styles.css';
-const ProductsCarousel = ({productsToDisplay}) => {
+const ProductsCarousel = (props) => {
+    const productsToDisplay = props.productsToDisplay;
+    const idPrefix = props.idPrefix;
     const n = productsToDisplay.length;
     const [clickedDot, setClickedDot] = useState('0');
     let active=[true];
@@ -22,7 +24,7 @@ const ProductsCarousel = ({productsToDisplay}) => {
         {
         productsToDisplay.map( (product) => {
             i++;
-            return (<a id={""+i} href={'#'+product.id} className={clickedDot === ""+i ? "active-dot" : "scroll-dot"} onClick={dotClicked}>.</a>)
+            return (<a id={idPrefix+i} href={'#'+product.id} className={clickedDot === idPrefix+i ? "active-dot" : "scroll-dot"} onClick={dotClicked}>.</a>)
         })}
         </div>
     </div>

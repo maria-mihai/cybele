@@ -10,18 +10,18 @@ const MainPage = () => {
   }
   const {allProducts} = useContext(CategoriesContext);
   const bestselling = allProducts.slice(0,5);
-  const newlyAdded = allProducts.slice(5,10);
+  const newlyAdded = allProducts.slice(6,11);
     return (<div className="main-page-container"><div className="main-page">
         <h1>Make your home a sanctuary</h1>
         <button onClick={navigateToShop}>GO TO SHOP</button>
     </div>
     <div className="carousel-and-title">
       <h2 className="best-selling">Our best-selling products</h2>
-      <ProductsCarousel productsToDisplay={bestselling}/>
+      <ProductsCarousel productsToDisplay={bestselling} idPrefix="a"/>
     </div>
     <div className="carousel-and-title">
       <h2 className="best-selling">Newly Added</h2>
-      <ProductsCarousel productsToDisplay={newlyAdded}/>
+      <ProductsCarousel productsToDisplay={newlyAdded} idPrefix="b"/>
     </div>
     </div>)
 }

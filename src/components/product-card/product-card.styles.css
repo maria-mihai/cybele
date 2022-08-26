@@ -19,9 +19,6 @@
     text-transform:uppercase;
     cursor: pointer;
 }
-.product-container img:hover {
-    opacity: 60%;
-}
 .productButton {
     display: none;
     position: absolute;
