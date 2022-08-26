@@ -4,13 +4,8 @@ import './products-carousel.styles.css';
 const ProductsCarousel = (props) => {
     const productsToDisplay = props.productsToDisplay;
     const idPrefix = props.idPrefix;
-    const n = productsToDisplay.length;
-    const [clickedDot, setClickedDot] = useState('0');
-    let active=[true];
-    for (var i = 1; i < n; i++) {
-        active.push(false);
-    }
-    i = -1;
+    const [clickedDot, setClickedDot] = useState(idPrefix+'0');
+    var  i = -1;
     const dotClicked = (event) => {
         setClickedDot(event.target.id);
     }
