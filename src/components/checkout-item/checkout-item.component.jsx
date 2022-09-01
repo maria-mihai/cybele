@@ -3,7 +3,8 @@ import './checkout-item.styles.css';
 
 import { CartContext } from "../../contexts/cart.context";
 const CheckoutItem = ({item}) => {
-    const {id, name, amount, price, images} = item;
+    const id = Math.floor(Math.random() * 20000)
+    const {name, amount, price, images} = item;
     const {cartItems, setCartItems} = useContext(CartContext);
     const decrease = () => {
         const updatedItems = cartItems.filter((itm) => itm.id !== id);

@@ -35,8 +35,10 @@ const SignUpForm = () => {
         }
         catch(error) {
             console.log("Error encountered when creating user", error.message)
-            if (error.code === 'auth/email-already-in-use')
-            setAlertText('Email already in use!');
+            if (error.code === 'auth/email-already-in-use') 
+                setAlertText('Email already in use!');
+            if(error.code === 'auth/weak-password')
+                setAlertText('Password is too short. Use at least 6 characters!');
         }
     }
     return (
